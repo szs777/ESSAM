@@ -1,0 +1,12 @@
+python es-sam-SGD_fine-tuning_gsm8k_accl.py \
+  --model_name Qwen/Qwen2.5-0.5B-Instruct \
+  --cuda_devices 0,1,2,3 \
+  --num_engines 4 \
+  --population_size 40 \
+  --sigma 0.0015 \
+  --alpha 0.00025 \
+  --rho 0.0001 \
+  --chunk_size 200 \
+  --epochs 40 \
+  --experiment_dir es-sam-sgd-ft-experiment-gsm8k-Qwen2.5-0.5B-Instruct \
+  --verbose
